@@ -29,6 +29,12 @@ $make --trace
 $git clean -df
 ```
 
+## Remember passwords by git
+```sh
+$ git config --global credential.helper "cache --timeout=36000"
+```
+see [Is there a way to skip password typing when using https:// on GitHub?](http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-on-github)
+
 ## Compile program using `cmake`
 ```sh
 $ mkdir build
