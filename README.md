@@ -17,9 +17,24 @@ You can build project by running following command:
 $ make
 ```
 
+# Tips & Tricks
 
+## Make command `make` be verbose
+```sh
+$make --trace
+```
 
+## Delete all untrackable files from working directory
+```sh
+$git clean -df
+```
 
-
-
-
+## Compile program using `cmake`
+```sh
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ cd ..
+$ ./build/src/Monkey
+```
