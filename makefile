@@ -6,3 +6,6 @@ build:
 links:		
 		ln -fs $(CURDIR)/build/src/Monkey src/Monkey 
 		ln -fs $(CURDIR)/build/tests/tests tests/tests
+
+clean:
+	rm -rf build src/Monkey tests/tests
