@@ -1,5 +1,5 @@
 # monkey is a search engine
-tra-ta-ta description
+Flexible search engine 
 
 # Development
 ## Folder structure
