@@ -1,4 +1,4 @@
-all: build 
+all: build links
 	$(MAKE) -C build $%
 
 build:
