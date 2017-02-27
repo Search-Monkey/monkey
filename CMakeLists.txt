@@ -12,6 +12,6 @@ find_package(Boost 1.58 REQUIRED
 )
 message( STATUS "Boost Test Framework: ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY} ")
 
-add_subdirectory (src build)
-add_subdirectory (tests build/tests)
+add_subdirectory (src )
+add_subdirectory (tests )
 
