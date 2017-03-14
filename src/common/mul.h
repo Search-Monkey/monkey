@@ -11,5 +11,5 @@
  *
  */
 
-const char *mul();
+int mul(int,int);
 
