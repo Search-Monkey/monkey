@@ -1,9 +1,24 @@
 #include <iostream>
 #include <fstream>
+
+// # For Alternative Read
+#include <iterator>
+#include <algorithm>
+#include <ios>
+
+
 using namespace std;
 int N = 256;
 //const char *FName="/home/semen/monkey/Cut.txt"; 
 const char *FName="/etc/passwd"; 
+void AltReadFile()
+{
+  std::ifstream f(FName);
+  std::copy( std::istream_iterator<char>(f >> std::noskipws),
+             std::istream_iterator<char>(),
+             std::ostream_iterator<char>( std::cout ) );
+}
+
 void ReadFile()
 {
   cout<<endl<<"ReadFile:  "; 
@@ -18,6 +33,7 @@ void ReadFile()
 }
 int main()
 {
-ReadFile();
+  //AltReadFile();
+  ReadFile();
 return 0;
 }
