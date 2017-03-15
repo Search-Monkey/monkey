@@ -1,8 +1,22 @@
 #include <iostream>
-#include "common/common.h"
+#include <fstream>
 using namespace std;
-int main ()
+int N = 256;
+const char *FName="/home/semen/monkey/Cut.txt"; 
+void ReadFile()
 {
-  cout << "The answer is " << answer() << endl;
-  return 0;
+  cout<<endl<<"ReadFile:  "; 
+  char S[N]={""}; 
+      ifstream in1(FName); 
+	 while (!in1.eof()) 
+	   {
+	     in1.getline(S,N); 
+	     cout<<S<<endl; 
+	   }
+       in1.close();
+}
+int main()
+{
+ReadFile();
+return 0;
 }
