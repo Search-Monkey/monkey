@@ -2,7 +2,8 @@
 #include <fstream>
 using namespace std;
 int N = 256;
-const char *FName="/home/semen/monkey/Cut.txt"; 
+//const char *FName="/home/semen/monkey/Cut.txt"; 
+const char *FName="/etc/passwd"; 
 void ReadFile()
 {
   cout<<endl<<"ReadFile:  "; 
