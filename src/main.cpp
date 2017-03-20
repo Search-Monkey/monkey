@@ -13,8 +13,8 @@
 using namespace std;
 int N = 256;
 //const char *FName="/home/semen/monkey/Cut.txt"; 
-//const char *FName="/etc/passwd"; 
-const char *FName="/tmp/t"; 
+const char *FName="/etc/passwd"; 
+//const char *FName="/tmp/t"; 
 #if 0 
 
 // C - style iterator
@@ -94,25 +94,23 @@ int main()
 		words[word]++;
 	}
 	
-	ofstream out;
-	out.open("out.txt");
-	
+
 	int count = 0;
 	
 	map <string,int>::iterator cur;
 	
-	out<<"Words count:"<<endl;
+	cout<<"Words count:"<<endl;
 	
 	for (cur=words.begin();cur!=words.end();cur++)
 	{
-		out<<(*cur).first<<": "<<(*cur).second<<endl;count+=(*cur).second;
+		cout<<(*cur).first<<": "<<(*cur).second<<endl;count+=(*cur).second;
 	}
 	
-	out<<"Words percenc:"<<endl;
+	cout<<"Words percenc:"<<endl;
 	
 	for (cur=words.begin();cur!=words.end();cur++)
 	{
-		out<<(*cur).first<<": "<<(float)((float)(*cur).second/(float)count)*100<<"%"<<endl;
+		cout<<(*cur).first<<": "<<(float)((float)(*cur).second/(float)count)*100<<"%"<<endl;
 	}
 	
 
